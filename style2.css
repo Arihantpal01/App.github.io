@@ -1,0 +1,242 @@
+body{
+    background-color: #cfd1e1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-div{
+    display: flex;
+     /* justify-content: center; */
+    align-items: center; 
+    /* min-height:100vh; */
+    margin: auto;
+    background: #cfd1e1; /* Shade of white color */
+    /* overflow: hidden; */
+    
+
+    
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:consolas;
+}
+/* nav{
+    background-color: rgb(119, 0, 255);
+}
+a{
+    text-decoration:none;
+    color: white;
+   
+}
+.container{
+    display: block;
+    margin: auto;
+    text-align: center;height:7vh;
+}
+h1{
+    padding-top: 10px;
+    color: white;
+    font-family:verdana;
+}
+.login{
+    margin-top: 10px;
+    background-color:rgb(119, 0, 255) ;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+.input-login{
+
+    width: 10vw;
+    height:5vw;
+} */
+
+.searchBox{
+    position:relative;
+    width:65px;
+    height:50px;
+    display: flex;
+    /* justify-content: right; */
+    align-items: center;
+    transition: all 0.5s;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+.searchBox:hover{
+    width:400px;
+}
+.searchBox::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(#fff,#fff,#e3e3e3);
+    z-index: 1;
+    filter: blur(1px);
+}
+
+.searchBox::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background:#9d9d9d;
+    z-index: 1;
+    filter: blur(1px);
+}
+.shadow{
+
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: calc(100% + 50px);
+    height: 300px;
+    background: linear-gradient(180deg,rgb(0,0,0,0.1),transparent,transparent);
+    transform-origin:top ;
+    transform: skew(45deg);
+    pointer-events: none;
+}
+
+.shadow::before{
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:#cfd1e1;
+    z-index: 1;
+}
+
+.searchBox input{
+
+    position:relative;
+    width:100%;
+    height: 100%;
+    border: none;
+    padding:10px 25px ;
+    outline: none;
+    font-size: 1.1rem;
+    color:#555;
+    background: linear-gradient(#dbdae1,#a3aaba);
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.1),
+    15px 15px 15px rgb(0,0,0,0.1),
+    20px 20px 20px rgb(0,0,0,0.1),
+    30px 30px 30px rgb(0,0,0,0.1),
+    inset 1px 1px 2px #fff;
+
+
+
+}
+.searchBox input::placeholder,
+.searchBox input{
+    color:transparent;
+
+}
+.searchBox:hover input::placeholder,
+.searchBox:hover input{
+    color: #555;
+}
+
+
+ion-icon{
+    position: absolute;
+    right: 20px;
+    color: #555;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.up-nav{
+    background: #cfd1e1; 
+    text-align: center;
+   padding-top: 20px;
+   padding-right: 20px;
+   font-size: larger;
+   color: #555;
+}
+
+.container{
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+button{
+
+   
+    width:150px;
+    height:60px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    border: none;
+    /* padding:10px 25px ; */
+    outline: none;
+    font-size: 1.1rem;
+    color:#555;
+    background: linear-gradient(#dbdae1,#a3aaba);
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.1),
+    15px 15px 15px rgb(0,0,0,0.1),
+    20px 20px 20px rgb(0,0,0,0.1),
+    30px 30px 30px rgb(0,0,0,0.1),
+    inset 1px 1px 2px #fff;
+    transition: all 0.5s;
+}
+
+.shadow2{
+
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: calc(100% + 50px);
+    height: 300px;
+    background: linear-gradient(180deg,rgb(0,0,0,0.1),transparent,transparent);
+    transform-origin:top ;
+    transform: skew(45deg);
+    pointer-events: none;
+}
+
+.shadow2::before{
+    content:"";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:#cfd1e1;
+    z-index: 1;
+}
+
+button:hover{
+    /* border-radius: 20px; */
+    /* padding-bottom: 10px; */
+    width: 160px;
+    height: 70px;
+    background: linear-gradient(#a3aaba,rgb(201, 196, 196));
+    color: #ffffff;
+}
+
+.box{
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: consolas;
+    color: #555;
+    /* padding-bottom: 100px; */
+    
+
+}
+
+.box:hover{
+    transition: all 2s;
+    font-size: 50px;
+}
